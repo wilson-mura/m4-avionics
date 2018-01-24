@@ -26,7 +26,6 @@
 
 html {
   position: relative;
-  min-height: 100%;
 }
 
 body {
@@ -48,7 +47,6 @@ body.fixed-nav {
 
 .content-wrapper {
   min-height: calc(100vh - 56px);
-  height: 100%
   padding-top: 1rem;
 }
 
