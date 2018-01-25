@@ -1,5 +1,5 @@
 """
-m4gcs webapp based on the Martlet 3 gcs and example at
+M4GCS webapp based on the Martlet 3 gcs and example at
 https://realpython.com/blog/python/the-ultimate-flask-front-end/.
 """
 from flask import Flask, render_template
