@@ -4,7 +4,8 @@ https://realpython.com/blog/python/the-ultimate-flask-front-end/.
 """
 from flask import Flask, render_template
 
-app = Flask(__name__, static_url_path="/static")
+# app = Flask(__name__, static_url_path="/m4gcs_webapp/src", template_folder="m4gcs_webapp/public")
+app = Flask(__name__, static_folder="m4gcs_webapp/src", template_folder="m4gcs_webapp/public")
 
 
 @app.route('/')
