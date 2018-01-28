@@ -18,7 +18,7 @@ def run_app_only():
     app.run(debug=True)
 
 
-def run(dl_in_pipe, ignition_in_pipe, gui_exit):
+def run(dl_in_pipe, gui_exit):
 
     app.run(debug=True)  # set debug=False to prevent restart
 
