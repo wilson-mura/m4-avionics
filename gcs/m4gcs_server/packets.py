@@ -19,10 +19,12 @@ DL_PACKET_EXTRA = 4
 PACKET_SIZE = METADATA_END + DL_PACKET_EXTRA + 48
 
 # Arbitary packet IDs
-THERMOCOUPLE_ID = 0b01001001  # 73
-PRESSURE_ID =     0b10010010  # 146
-IG_ID =           0b00100100  # 36
-CMD_ID =          0b11111111  # 255
+
+CMD_ID =          0
+THERMOCOUPLE_ID = 1
+PRESSURE_ID =     2
+IG_ID =           3
+FORCE_ID =        4
 
 
 class Packet(object):
@@ -153,6 +155,30 @@ class Ignition_Packet(DL_Packet):
         if (self.cont[channel_no-1] == 255):
             rtn = False
         return rtn
+
+    def printout(self):
+        super().printout(self)
+        # TODO:
+        # Print to GUI's terminal views
+
+    def print_to_file(self,file):
+        super().print_to_file(self)
+        #TODO
+        pass
+
+
+class Force_Packet(DL_Packet):
+
+    def __init__(self, input_struct=bytes(PACKET_SIZE)):
+        super().__init__(self,input_struct)
+        payload_length = 12
+        payload = self.data_struct[self.end:self.end+payload_length]
+        self.end += payload_length
+        unpacked = struct.unpack('<III', payload)
+        self.force_1  = unpacked[0]
+        self.force_2 = unpacked[1]
+        self.force_3 = unpacked[2]
+
 
     def printout(self):
         super().printout(self)

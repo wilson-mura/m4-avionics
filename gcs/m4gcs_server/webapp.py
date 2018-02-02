@@ -6,12 +6,41 @@ from flask import Flask, render_template
 from multiprocessing import Pipe, Process
 
 # app = Flask(__name__, static_url_path="/m4gcs_webapp/src", template_folder="m4gcs_webapp/public")
-app = Flask(__name__, static_folder="m4gcs_webapp/src", template_folder="m4gcs_webapp/public")
+app = Flask(__name__)
 
 
-@app.route('/')
-def index():
-    return render_template('index.html')
+@app.route('/check')
+def check():
+    pass
+    #TODO: Check for new packets
+
+@app.route('/thermo')
+def thermo():
+    return to_json(THERMOCOUPLE_ID)
+
+@app.route('/pressure')
+def pressure():
+    return to_json(PRESSURE_ID)
+
+@app.route('/ignition')
+def ignition():
+    return to_json(IG_ID)
+
+@app.route('/cmd')
+def cmd():
+    return to_json(CMD_ID)
+
+@app.route('/force')
+def force():
+    return to_json(FORCE_ID)
+
+#def index():
+#    return render_template('index.html')
+
+def to_json(id):
+    # TODO:
+    # - Get the latest packet from app_pipes[id]
+    return latest_packet.print_json()
 
 
 def run_app_only():
