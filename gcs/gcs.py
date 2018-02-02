@@ -1,2 +1,2 @@
-from m4gcs import run
+from m4gcs_server import run
 run()
