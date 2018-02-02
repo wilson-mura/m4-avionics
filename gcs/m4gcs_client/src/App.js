@@ -1,18 +1,32 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
+//Only needed if we want to have multiple views
+import { Switch, Route, Redirect } from 'react-router-dom';
+
+import { Container } from 'reactstrap';
+
+import Dashboard from './containers/Dashboard.js';
+
+import Header from './components/Header.js';
+//import Sidebar    from './components/Sidebar.js';
+import Footer from './components/Footer.js';
+//import Breadcrumb from 'components/Breadcrumb.js'
+
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="app">
+        <Header />
+        <div className="app-body">
+          <main className="main">
+            <Container fluid>
+              <p> Hello World </p>
+            </Container>
+          </main>
+        </div>
+        <Footer />
       </div>
     );
   }
