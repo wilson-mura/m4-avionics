@@ -1,14 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Footer extends Component {
+import { Grid } from 'react-bootstrap';
+
+class Footer extends React.Component {
   render() {
     return (
-      <footer className="app-footer">
-        <span>
-          <a href="http://www.cusf.co.uk/">Cambridge University Spaceflight</a>{' '}
-          &copy; 2018 CUSF.
-        </span>
-      </footer>
+      <Grid>
+        <hr />
+        <footer>
+          <p>
+            2017{' '}
+            <a href="http://www.cusf.co.uk/">
+              Cambridge University Spaceflight
+            </a>{' '}
+            &middot; <a href="mailto:contact@cusf.co.uk">Email</a>
+          </p>
+        </footer>
+      </Grid>
     );
   }
 }

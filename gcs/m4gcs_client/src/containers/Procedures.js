@@ -3,14 +3,15 @@ import React from 'react';
 //import { Row, Col, Image } from 'react-bootstrap';
 //import { Link } from 'react-router-dom';
 
-class Dashboard extends React.Component {
+class Procedures extends React.Component {
   render() {
     return (
       <div>
-        <h1> Hello Martlet 4 </h1>
+        <h1> Procedures </h1>
+        <p> Lorem Ipsum </p>
       </div>
     );
   }
 }
 
-export default Dashboard;
+export default Procedures;
