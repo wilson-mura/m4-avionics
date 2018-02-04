@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name agg)(type KiCad)(uri ${KIPRJMOD}/../../agg-kicad/agg.pretty)(options "")(descr ""))
+  (lib (name m4fc)(type KiCad)(uri ${KIPRJMOD}/m4fc.pretty)(options "")(descr ""))
 )
