@@ -20,10 +20,10 @@ class Header extends React.Component {
               <Link to="/procedures">Procedures</Link>
             </NavItem>
             <NavItem>
-              <Link to="/Sensor">Sensors</Link>
+              <Link to="/sensors">Sensors</Link>
             </NavItem>
             <NavItem>
-              <Link to="/Status">Status</Link>
+              <Link to="/status">Status</Link>
             </NavItem>
           </Nav>
           <Nav pullRight>

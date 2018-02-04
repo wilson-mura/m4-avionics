@@ -1,9 +1,13 @@
 import React from 'react';
 
-//import { Row, Col, Image } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 //import { Link } from 'react-router-dom';
 
 class Procedures extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <div>

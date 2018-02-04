@@ -8,6 +8,7 @@ import { Grid } from 'react-bootstrap';
 //Importing views from cointainers folder
 import Dashboard from './containers/Dashboard.js';
 import Procedures from './containers/Procedures.js';
+import Sensors from './containers/Sensors.js';
 
 //Importing containers
 import Header from './components/Header.js';
@@ -25,6 +26,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/dashboard" component={Dashboard} />
             <Route exact path="/procedures" component={Procedures} />
+            <Route exact path="/Sensors" component={Sensors} />
             <Redirect from="/" to="/dashboard" />
           </Switch>
         </Grid>
