@@ -8,15 +8,19 @@
     "coreui.io-react": "^1.0.0-alpha.6",
     "husky": "^0.14.3",
     "lint-staged": "^6.1.0",
+    "mapbox-gl": "^0.44.0",
     "prettier": "^1.10.2",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.2.0",
+    "react-map-gl": "^3.2.1",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.0",
     "react-smoothie": "^0.2.1",
-    "react-transition-group": "^2.2.1"
+    "react-transition-group": "^2.2.1",
+    "redux": "^3.7.2",
+    "video-react": "^0.9.4"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
