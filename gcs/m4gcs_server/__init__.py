@@ -20,8 +20,8 @@ def run():
     usb_thermo_pipe, app_thermo_pipe = multiprocessing.Pipe(duplex = True)
     usb_pressure_pipe, app_pressure_pipe = multiprocessing.Pipe(duplex = True)
     usb_ignition_pipe, app_ignition_pipe = multiprocessing.Pipe(duplex = True)
-    usb_cmd_pipe, app_cmd_pipe = multiprocessing.Pipe(duplex = True)
     usb_force_pipe, app_force_pipe = multiprocessing.Pipe(duplex = True)
+    usb_cmd_pipe, app_cmd_pipe = multiprocessing.Pipe(duplex = True)
 
     #ig_in_pipe, ig_out_pipe = multiprocessing.Pipe(duplex = True)
 

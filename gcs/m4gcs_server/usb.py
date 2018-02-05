@@ -34,6 +34,8 @@ def run(dl_out_pipe, gui_exit):
                     pckt = Pressure_Packet(data)
                 elif (metadata.id == IG_ID):
                     pckt = Ignition_Packet(data)
+                elif (metadata.id == FORCE_ID):
+                    pckt = Force_Packet(data)
                 elif (metadata.id == CMD_ID):
                     pckt = OkGo_Cmd_Packet(data)
 
