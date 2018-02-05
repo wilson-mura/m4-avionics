@@ -26,13 +26,14 @@ def pressure():
 def ignition():
     return to_json(IG_ID)
 
+@app.route('/force')
+def force():
+    return to_json(FORCE_ID)
+
 @app.route('/cmd')
 def cmd():
     return to_json(CMD_ID)
 
-@app.route('/force')
-def force():
-    return to_json(FORCE_ID)
 
 #def index():
 #    return render_template('index.html')
