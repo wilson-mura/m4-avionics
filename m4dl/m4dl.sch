@@ -81,10 +81,6 @@ Text Label 2800 1950 2    60   ~ 0
 Text Label 2800 2050 2    60   ~ 0
 5v_CAM1
 Text Label 2800 2250 2    60   ~ 0
-CHARGE
-Text Label 3300 2250 0    60   ~ 0
-CHARGE
-Text Label 3300 2150 0    60   ~ 0
 PWR
 Text Label 3300 1350 0    60   ~ 0
 PYRO4
@@ -291,10 +287,6 @@ Wire Wire Line
 	2800 1950 2900 1950
 Wire Wire Line
 	2900 2050 2800 2050
-Wire Wire Line
-	2800 2250 2900 2250
-Wire Wire Line
-	3200 2250 3300 2250
 Wire Wire Line
 	3300 2150 3200 2150
 Wire Wire Line
@@ -1005,12 +997,6 @@ Text Label 2800 3900 2    60   ~ 0
 5v_AUX2
 Text Label 2800 4000 2    60   ~ 0
 5v_CAM1
-Text Label 2800 4200 2    60   ~ 0
-CHARGE
-Text Label 3300 4200 0    60   ~ 0
-CHARGE
-Text Label 3300 4100 0    60   ~ 0
-PWR
 Text Label 3300 3300 0    60   ~ 0
 PYRO4
 Text Label 3300 3200 0    60   ~ 0
@@ -2354,4 +2340,18 @@ Wire Notes Line
 	15900 5200 5800 5200
 Wire Notes Line
 	5800 5200 5800 750 
+Wire Wire Line
+	2800 2250 2900 2250
+Wire Wire Line
+	3200 2250 3300 2250
+Text Label 3300 2150 0    60   ~ 0
+RSVD12
+Text Label 3300 2250 0    60   ~ 0
+RSVD13
+Text Label 2800 4200 2    60   ~ 0
+PWR
+Text Label 3300 4100 0    60   ~ 0
+RSVD12
+Text Label 3300 4200 0    60   ~ 0
+RSVD13
 $EndSCHEMATC
