@@ -1881,18 +1881,6 @@ Text Notes 3750 2900 0    98   ~ 20
 CLOCK
 Text Notes 6450 4900 0    98   ~ 20
 RADIO
-$Comp
-L agg-kicad:ADL5324 IC?
-U 1 1 5AF6C598
-P 10700 7550
-F 0 "IC?" H 10700 7875 50  0000 C CNN
-F 1 "ADL5324" H 10700 7784 50  0000 C CNN
-F 2 "agg:SOT-89-3" H 10300 7250 50  0001 L CNN
-F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/ADL5324.pdf" H 10300 7150 50  0001 L CNN
-F 4 "2099794" H 10300 7050 50  0001 L CNN "Farnell"
-	1    10700 7550
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	550  10200 6400 10200
 Text Notes 8000 8500 0    50   ~ 0
