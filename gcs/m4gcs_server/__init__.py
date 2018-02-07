@@ -12,18 +12,16 @@ from . import webapp, usb
 #signal.signal(signal.SIGINT, signal.SIG_DFL)  # End all processes on ctrl-c
                                               # Find a cleaner way of doing this?
 
-
 def run():
     print("Starting Martlet IV Ground Station...")
 
     # please name better
-    usb_pipes = []
-    app_pipes = []
+    usb_pipe_end = [] # USB end
+    app_pipe_end = [] # App end
     for i in range(5):
-        usb_pipes.append(multiprocessing.Pipe(duplex = True))
-        app_pipes.append(multiprocessing.Pipe(duplex = True))
-
-
+        usb_pipe_end.append(multiprocessing.Pipe(duplex = True))
+        app_pipe_end.append(multiprocessing.Pipe(duplex = True))
+        
     #usb_thermo_pipe, app_thermo_pipe = multiprocessing.Pipe(duplex = True)
     #usb_pressure_pipe, app_pressure_pipe = multiprocessing.Pipe(duplex = True)
     #usb_ignition_pipe, app_ignition_pipe = multiprocessing.Pipe(duplex = True)
@@ -36,11 +34,11 @@ def run():
     gui_exit.clear()
 
     # Start webapp process
-    webapp_process = multiprocessing.Process(target=webapp.run, args=(usb_in_pipe, gui_exit))
+    webapp_process = multiprocessing.Process(target=webapp.run, args=(app_pipe_end, gui_exit))
     webapp_process.start()
 
     # Start datalogger process
-    usb_process = multiprocessing.Process(target=usb.run, args=(usb_out_pipe, gui_exit))
+    usb_process = multiprocessing.Process(target=usb.run, args=(usb_pipe_end, gui_exit))
     usb_process.start()
 
     # # Start ignition monitoring process

@@ -4,35 +4,37 @@ https://realpython.com/blog/python/the-ultimate-flask-front-end/.
 """
 from flask import Flask, render_template
 from multiprocessing import Pipe, Process
+from flask_socketio import SocketIO, send
 
 # app = Flask(__name__, static_url_path="/m4gcs_webapp/src", template_folder="m4gcs_webapp/public")
 app = Flask(__name__)
+socketio = SocketIO(app)
+_app_pipes = None
 
-
-@app.route('/check')
+@socketio.on('/check')
 def check():
     pass
     #TODO: Check for new packets
 
-@app.route('/thermo')
-def thermo():
-    return to_json(THERMOCOUPLE_ID)
+@socketio.on('thermo', namespace = '/thermo')
+def thermo(json):
+    send(to_json(THERMOCOUPLE_ID))
 
-@app.route('/pressure')
+@socketio.on('pressure', namespace = '/pressure')
 def pressure():
-    return to_json(PRESSURE_ID)
+    send(to_json(PRESSURE_ID))
 
-@app.route('/ignition')
+@socketio.on('ignition', namespace = '/ignition')
 def ignition():
-    return to_json(IG_ID)
+    send(to_json(IG_ID))
 
-@app.route('/force')
+@socketio.on('force', namespace = '/force')
 def force():
-    return to_json(FORCE_ID)
+    send(to_json(FORCE_ID))
 
-@app.route('/cmd')
+@socketio.on('cmd', namespace = '/cmd')
 def cmd():
-    return to_json(CMD_ID)
+    send(to_json(CMD_ID))
 
 
 #def index():
@@ -41,7 +43,7 @@ def cmd():
 def to_json(id):
     # TODO:
     # - Get the latest packet from app_pipes[id]
-    return latest_packet.print_json()
+    return _app_pipes[id].print_json()
 
 
 def run_app_only():
@@ -49,6 +51,7 @@ def run_app_only():
 
 
 def run(dl_in_pipe, gui_exit):
+    global _app_pipes = dl_in_pipe
 
     app.run(debug=True)  # set debug=False to prevent restart
 

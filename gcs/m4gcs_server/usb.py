@@ -41,8 +41,11 @@ def run(dl_out_pipe, gui_exit):
                 else:
                     print('Garbage Data')
                     pckt = Packet()
-
-                dl_out_pipe[metadata.id].send(pckt)
+                try:
+                    dl_out_pipe[metadata.id].send(pckt)
+                except IndexError:
+                    print('Pipe index out of range. Send to 0')
+                    dl_out_pipe[0].send(pckt)
                 #TODO: log packets (and raw serial?)
 
     except serial.serialutil.SerialException as e:
