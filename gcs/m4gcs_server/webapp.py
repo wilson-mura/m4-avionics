@@ -43,7 +43,8 @@ def cmd():
 def to_json(id):
     # TODO:
     # - Get the latest packet from app_pipes[id]
-    return _app_pipes[id].print_json()
+    pckt = _app_pipes[id].recv()
+    return pckt.print_json()
 
 
 def run_app_only():
