@@ -38,8 +38,11 @@ def run(dl_out_pipe, gui_exit):
                     pckt = Force_Packet(data)
                 elif (metadata.id == CMD_ID):
                     pckt = OkGo_Cmd_Packet(data)
+                else:
+                    print('Garbage Data')
+                    pckt = Packet()
 
-                dl_out_pipe.send(pckt)
+                dl_out_pipe[metadata.id].send(pckt)
                 #TODO: log packets (and raw serial?)
 
     except serial.serialutil.SerialException as e:
