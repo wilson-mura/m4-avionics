@@ -55,6 +55,11 @@ class Packet(object):
         #TODO
         pass
 
+    def print_json(self):
+        # Convert to json, remove data_struct
+        data = self.__dict__
+        del data['data_struct']
+        return json.dumps(data)
 
 #######################
 # Datalogger packets
@@ -63,11 +68,11 @@ class DL_Packet(Packet):
     """Base class for datalogger packets. Add datalogger systick stamp"""
     def __init__(self, input_struct=bytes(PACKET_SIZE)):
         #Packet.__init__(self, input_struct)
-        super().__init__(self,input_struct)
+        super().__init__(input_struct)
         payload = self.data_struct[self.end:self.end+DL_PACKET_EXTRA]
         self.end += DL_PACKET_EXTRA
         self.systick_tx = struct.unpack('<I', payload)  # systicks (transmitter)
-                                                        # 0 if not applicable
+        self.systick_tx = self.systick_tx[0]                                                # 0 if not applicable
         self.timestamp_tx = self.systick_tx / SYSTICK_FREQ_TX  # s (transmitter)
 
     def printout(self):
@@ -85,7 +90,7 @@ class Thermo_Packet(DL_Packet):
     """Thermocouple readings"""
     def __init__(self, input_struct=bytes(PACKET_SIZE)):
         #DL_Packet.__init__(self, input_struct)
-        super().__init__(self,input_struct)
+        super().__init__(input_struct)
         payload_length = 48
         payload = self.data_struct[self.end: self.end + payload_length]
         self.end += payload_length
@@ -108,7 +113,7 @@ class Pressure_Packet(DL_Packet):
     """Pressure sensor readings"""
     def __init__(self, input_struct=bytes(PACKET_SIZE)):
         #DL_Packet.__init__(self, input_struct)
-        super().__init__(self,input_struct)
+        super().__init__(input_struct)
         payload_length = 16
         payload = self.data_struct[self.end:self.end + payload_length]
         self.end += payload_length
@@ -132,7 +137,7 @@ class Ignition_Packet(DL_Packet):
     # - May need more channels
     # - Based on OkGo 2, can edit fields if necessary
     def __init__(self, input_struct=bytes(PACKET_SIZE)):
-        super().__init__(self,input_struct)
+        super().__init__(input_struct)
         payload_length = 7
         payload = self.data_struct[self.end:self.end+payload_length]
         self.end += payload_length
@@ -170,15 +175,11 @@ class Ignition_Packet(DL_Packet):
 class Force_Packet(DL_Packet):
 
     def __init__(self, input_struct=bytes(PACKET_SIZE)):
-        super().__init__(self,input_struct)
+        super().__init__(input_struct)
         payload_length = 12
         payload = self.data_struct[self.end:self.end+payload_length]
         self.end += payload_length
-        unpacked = struct.unpack('<III', payload)
-        self.force_1  = unpacked[0]
-        self.force_2 = unpacked[1]
-        self.force_3 = unpacked[2]
-
+        self.force = struct.unpack('<III', payload)
 
     def printout(self):
         super().printout(self)
@@ -197,11 +198,12 @@ class OkGo_Cmd_Packet(Packet):
     # TODO:
     # - May need more channels
     def __init__(self, input_struct=bytes(PACKET_SIZE)):
-        super().__init__(self,input_struct)
+        super().__init__(input_struct)
         payload_length = 1
         payload = self.data_struct[self.end:self.end+1]
         self.end += payload_length
         self.command = struct.unpack('<B', payload)
+        self.command = self.command[0]
         # From OkGo 2 packet_format.txt
         self.buzzer =       (self.command & 0b11100000)/32  # Three bits
         self.arm =      bool(self.command & 0b00010000)     # One bit
