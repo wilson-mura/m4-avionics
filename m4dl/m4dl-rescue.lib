@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# m4dl-rescue:3v3-agg-kicad
+# 3v3-agg-kicad
 #
-DEF m4dl-rescue:3v3-agg-kicad #PWR 0 40 N N 1 F P
+DEF 3v3-agg-kicad #PWR 0 40 N N 1 F P
 F0 "#PWR" 0 110 50 H I L CNN
-F1 "m4dl-rescue:3v3-agg-kicad" 0 90 50 H V C CNN
+F1 "3v3-agg-kicad" 0 90 50 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -15,11 +15,11 @@ X 3v3 1 0 0 0 L 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# m4dl-rescue:ADP3335-agg-kicad
+# ADP3335-agg-kicad
 #
-DEF m4dl-rescue:ADP3335-agg-kicad IC 0 40 Y Y 1 F N
+DEF ADP3335-agg-kicad IC 0 40 Y Y 1 F N
 F0 "IC" -200 200 50 H V L CNN
-F1 "m4dl-rescue:ADP3335-agg-kicad" -200 -300 50 H V L CNN
+F1 "ADP3335-agg-kicad" -200 -300 50 H V L CNN
 F2 "agg:MSOP-8" -200 -400 50 H I L CNN
 F3 "" 400 -400 50 H I C CNN
 F4 "2067775" -200 -500 50 H I L CNN "Farnell"
@@ -36,11 +36,11 @@ X IN 8 -300 0 100 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# m4dl-rescue:AGND-agg-kicad
+# AGND-agg-kicad
 #
-DEF m4dl-rescue:AGND-agg-kicad #PWR 0 40 N N 1 F P
+DEF AGND-agg-kicad #PWR 0 40 N N 1 F P
 F0 "#PWR" -130 40 50 H I L CNN
-F1 "m4dl-rescue:AGND-agg-kicad" 0 -100 50 H V C CNN
+F1 "AGND-agg-kicad" 0 -100 50 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -50,11 +50,11 @@ X AGND 1 0 0 0 L 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# m4dl-rescue:AVCC-agg-kicad
+# AVCC-agg-kicad
 #
-DEF m4dl-rescue:AVCC-agg-kicad #PWR 0 40 N N 1 F P
+DEF AVCC-agg-kicad #PWR 0 40 N N 1 F P
 F0 "#PWR" 0 110 50 H I L CNN
-F1 "m4dl-rescue:AVCC-agg-kicad" 0 90 50 H V C CNN
+F1 "AVCC-agg-kicad" 0 90 50 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -64,11 +64,11 @@ X AVCC 1 0 0 0 L 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# m4dl-rescue:C-agg-kicad
+# C-agg-kicad
 #
-DEF m4dl-rescue:C-agg-kicad C 0 40 N N 1 F N
+DEF C-agg-kicad C 0 40 N N 1 F N
 F0 "C" 50 70 50 H V C CNN
-F1 "m4dl-rescue:C-agg-kicad" 50 -70 50 H V C CNN
+F1 "C-agg-kicad" 50 -70 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -79,11 +79,11 @@ X ~ 2 100 0 40 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# m4dl-rescue:CONN_02x15-agg-kicad
+# CONN_02x15-agg-kicad
 #
-DEF m4dl-rescue:CONN_02x15-agg-kicad J 0 1 Y N 1 F N
+DEF CONN_02x15-agg-kicad J 0 1 Y N 1 F N
 F0 "J" -100 100 50 H V L CNN
-F1 "m4dl-rescue:CONN_02x15-agg-kicad" -100 -1500 50 H V L CNN
+F1 "CONN_02x15-agg-kicad" -100 -1500 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -151,11 +151,11 @@ X 9 9 -200 -400 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# m4dl-rescue:GND-agg-kicad
+# GND-agg-kicad
 #
-DEF m4dl-rescue:GND-agg-kicad #PWR 0 40 N N 1 F P
+DEF GND-agg-kicad #PWR 0 40 N N 1 F P
 F0 "#PWR" -130 40 50 H I L CNN
-F1 "m4dl-rescue:GND-agg-kicad" 0 -100 50 H V C CNN
+F1 "GND-agg-kicad" 0 -100 50 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -165,11 +165,11 @@ X GND 1 0 0 0 L 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# m4dl-rescue:LED-agg-kicad
+# LED-agg-kicad
 #
-DEF m4dl-rescue:LED-agg-kicad D 0 40 N N 1 F N
+DEF LED-agg-kicad D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V L CNN
-F1 "m4dl-rescue:LED-agg-kicad" 0 -75 50 H V L CNN
+F1 "LED-agg-kicad" 0 -75 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -182,11 +182,11 @@ X ~ 2 100 0 30 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# m4dl-rescue:MCP2562-agg-kicad
+# MCP2562-agg-kicad
 #
-DEF m4dl-rescue:MCP2562-agg-kicad IC 0 40 Y Y 1 F N
+DEF MCP2562-agg-kicad IC 0 40 Y Y 1 F N
 F0 "IC" -300 300 50 H V L CNN
-F1 "m4dl-rescue:MCP2562-agg-kicad" -300 -300 50 H V L CNN
+F1 "MCP2562-agg-kicad" -300 -300 50 H V L CNN
 F2 "agg:DFN-8-EP-MICROCHIP" -300 -400 50 H I L CNN
 F3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005167C.pdf" -300 -500 50 H I L CNN
 F4 "824-3135" -300 -700 50 H I L CNN "RS"
@@ -204,11 +204,11 @@ X VSS EP -400 -100 100 R 50 50 0 0 W
 ENDDRAW
 ENDDEF
 #
-# m4dl-rescue:MICROSD-agg-kicad
+# MICROSD-agg-kicad
 #
-DEF m4dl-rescue:MICROSD-agg-kicad U 0 40 Y Y 1 F N
+DEF MICROSD-agg-kicad U 0 40 Y Y 1 F N
 F0 "U" -300 400 50 H V L CNN
-F1 "m4dl-rescue:MICROSD-agg-kicad" -300 -500 50 H V L CNN
+F1 "MICROSD-agg-kicad" -300 -500 50 H V L CNN
 F2 "agg:MICROSD_MOLEX_503398-1892" -300 -600 50 H I L CNN
 F3 "" -400 300 50 H I C CNN
 F4 "2358234" -300 -700 50 H I L CNN "Farnell"
@@ -228,11 +228,11 @@ X SHIELD 9 500 300 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# m4dl-rescue:PWR-agg-kicad
+# PWR-agg-kicad
 #
-DEF m4dl-rescue:PWR-agg-kicad #FLG 0 40 N N 1 F P
+DEF PWR-agg-kicad #FLG 0 40 N N 1 F P
 F0 "#FLG" 0 160 50 H I C CNN
-F1 "m4dl-rescue:PWR-agg-kicad" 0 90 50 H V C CNN
+F1 "PWR-agg-kicad" 0 90 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -241,11 +241,11 @@ X pwr 1 0 0 20 U 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# m4dl-rescue:R-agg-kicad
+# R-agg-kicad
 #
-DEF m4dl-rescue:R-agg-kicad R 0 40 N N 1 F N
+DEF R-agg-kicad R 0 40 N N 1 F N
 F0 "R" 50 50 50 H V C CNN
-F1 "m4dl-rescue:R-agg-kicad" 50 -50 50 H V C CNN
+F1 "R-agg-kicad" 50 -50 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -255,11 +255,11 @@ X ~ 2 100 0 20 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# m4dl-rescue:SMD_XTAL-agg-kicad
+# SMD_XTAL-agg-kicad
 #
-DEF m4dl-rescue:SMD_XTAL-agg-kicad Y 0 40 N N 1 F N
+DEF SMD_XTAL-agg-kicad Y 0 40 N N 1 F N
 F0 "Y" 50 70 50 H V C CNN
-F1 "m4dl-rescue:SMD_XTAL-agg-kicad" 50 -150 50 H V C CNN
+F1 "SMD_XTAL-agg-kicad" 50 -150 50 H V C CNN
 F2 "agg:XTAL-20x16" 50 -220 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -275,11 +275,11 @@ X 4 4 100 -100 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# m4dl-rescue:STM32F405RxTx-agg-kicad
+# STM32F405RxTx-agg-kicad
 #
-DEF m4dl-rescue:STM32F405RxTx-agg-kicad IC 0 40 Y Y 1 F N
+DEF STM32F405RxTx-agg-kicad IC 0 40 Y Y 1 F N
 F0 "IC" -400 1900 50 H V L CNN
-F1 "m4dl-rescue:STM32F405RxTx-agg-kicad" -400 -1900 50 H V L CNN
+F1 "STM32F405RxTx-agg-kicad" -400 -1900 50 H V L CNN
 F2 "agg:LQFP-64" -400 -2000 50 H I L CNN
 F3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf" -400 -2100 50 H I L CNN
 F4 "2064363" -400 -2200 50 H I L CNN "Farnell"
@@ -352,11 +352,11 @@ X PC1 9 500 0 100 L 50 50 0 0 B
 ENDDRAW
 ENDDEF
 #
-# m4dl-rescue:SWD_TC-agg-kicad
+# SWD_TC-agg-kicad
 #
-DEF m4dl-rescue:SWD_TC-agg-kicad P 0 40 Y Y 1 F N
+DEF SWD_TC-agg-kicad P 0 40 Y Y 1 F N
 F0 "P" -300 200 50 H V L CNN
-F1 "m4dl-rescue:SWD_TC-agg-kicad" -300 -200 50 H V L CNN
+F1 "SWD_TC-agg-kicad" -300 -200 50 H V L CNN
 F2 "agg:TC2030-NL" -300 -300 50 H I L CNN
 F3 "" -400 100 50 H I C CNN
 DRAW
@@ -367,100 +367,6 @@ X ~RST 3 -400 0 100 R 50 50 1 1 C
 X SWDCLK 4 400 0 100 L 50 50 1 1 O
 X GND 5 -400 -100 100 R 50 50 1 1 W
 X SWO 6 400 -100 100 L 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# strain_1-3-cache:3v3
-#
-DEF strain_1-3-cache:3v3 #PWR 0 40 N N 1 F P
-F0 "#PWR" 0 110 50 H I L CNN
-F1 "strain_1-3-cache:3v3" 0 90 50 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 2 0 1 0 0 50 20 20 N
-P 3 0 1 0 0 0 0 50 -20 20 N
-X 3v3 1 0 0 0 L 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# strain_1-3-cache:AD8656
-#
-DEF strain_1-3-cache:AD8656 IC 0 40 Y N 2 F N
-F0 "IC" 0 300 50 H V L CNN
-F1 "strain_1-3-cache:AD8656" 0 -300 50 H V L CNN
-F2 "agg:MSOP-8" 0 -400 50 H I L CNN
-F3 "" 0 0 50 H I C CNN
-F4 "1858055" 0 -500 50 H I L CNN "Farnell"
-DRAW
-P 2 0 1 0 20 -80 50 -80 N
-P 2 0 1 0 20 80 50 80 N
-P 2 0 1 0 40 -60 40 -100 N
-P 4 0 1 0 300 0 0 150 0 -150 300 0 f
-P 2 1 1 0 90 -70 115 -70 N
-P 2 1 1 0 90 70 110 70 N
-P 2 1 1 0 100 50 100 80 N
-X OUT 1 400 0 100 L 50 50 1 1 O
-X -IN 2 -100 100 100 R 50 50 1 1 I
-X +IN 3 -100 -100 100 R 50 50 1 1 I
-X V- 4 100 -200 100 U 50 50 1 1 W
-X V+ 8 100 200 100 D 50 50 1 1 W
-X +IN 5 -100 -100 100 R 50 50 2 1 I
-X -IN 6 -100 100 100 R 50 50 2 1 I
-X OUT 7 400 0 100 L 50 50 2 1 O
-ENDDRAW
-ENDDEF
-#
-# strain_1-3-cache:C_Small
-#
-DEF strain_1-3-cache:C_Small C 0 10 N N 1 F N
-F0 "C" 10 70 50 H V L CNN
-F1 "strain_1-3-cache:C_Small" 10 -80 50 H V L CNN
-F2 "" 0 0 50 H V C CNN
-F3 "" 0 0 50 H V C CNN
-$FPLIST
- C?
- C_????_*
- C_????
- SMD*_c
- Capacitor*
-$ENDFPLIST
-DRAW
-P 2 0 1 13 -60 -20 60 -20 N
-P 2 0 1 12 -60 20 60 20 N
-X ~ 1 0 100 75 D 40 40 1 1 P
-X ~ 2 0 -100 80 U 40 40 1 1 P
-ENDDRAW
-ENDDEF
-#
-# strain_1-3-cache:GND
-#
-DEF strain_1-3-cache:GND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "strain_1-3-cache:GND" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H V C CNN
-F3 "" 0 0 50 H V C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# strain_1-3-cache:R
-#
-DEF strain_1-3-cache:R R 0 0 N Y 1 F N
-F0 "R" 80 0 50 V V C CNN
-F1 "strain_1-3-cache:R" 0 0 50 V V C CNN
-F2 "" -70 0 50 V V C CNN
-F3 "" 0 0 50 H V C CNN
-$FPLIST
- R_*
- Resistor_*
-$ENDFPLIST
-DRAW
-S -40 -100 40 100 0 1 10 N
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
