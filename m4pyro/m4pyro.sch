@@ -320,11 +320,11 @@ Text Label 15000 2200 0    60   ~ 0
 CAN_TXD
 Text Label 15000 2100 0    60   ~ 0
 CAN_RXD
-Text Label 15000 4500 0    50   ~ 0
+Text Label 15000 3900 0    50   ~ 0
 LED_GRN
-Text Label 15000 4300 0    50   ~ 0
+Text Label 13800 4200 2    50   ~ 0
 LED_RED
-Text Label 15000 4400 0    50   ~ 0
+Text Label 13800 4100 2    50   ~ 0
 LED_YLW
 Wire Wire Line
 	15000 2200 14900 2200
@@ -1589,21 +1589,21 @@ Text Notes 9250 7150 0    60   ~ 0
 Channel 4
 Text Notes 10850 5500 0    60   ~ 0
 Voltage Monitoring
-Text Label 15000 2600 0    50   ~ 0
+Text Label 15000 2500 0    59   ~ 0
 CH5
-Text Label 15000 3600 0    50   ~ 0
+Text Label 15000 3500 0    59   ~ 0
 CH6
-Text Label 15000 3800 0    50   ~ 0
+Text Label 15000 1500 0    59   ~ 0
 CH7
-Text Label 15000 3500 0    50   ~ 0
+Text Label 15000 3400 0    59   ~ 0
 CH8
-Text Label 15000 2500 0    50   ~ 0
+Text Label 15000 3600 0    59   ~ 0
 CH1
-Text Label 15000 2800 0    50   ~ 0
+Text Label 15000 2800 0    59   ~ 0
 CH2
-Text Label 15000 3700 0    50   ~ 0
+Text Label 15000 2700 0    59   ~ 0
 CH3
-Text Label 15000 3400 0    50   ~ 0
+Text Label 15000 2600 0    59   ~ 0
 CH4
 Wire Notes Line
 	4100 9550 550  9550
@@ -1644,15 +1644,9 @@ Wire Wire Line
 Wire Wire Line
 	15000 2800 14900 2800
 Wire Wire Line
-	14900 3600 15000 3600
-Wire Wire Line
 	15000 2500 14900 2500
 Wire Wire Line
 	14900 2600 15000 2600
-Wire Wire Line
-	15000 3700 14900 3700
-Wire Wire Line
-	14900 3800 15000 3800
 $Comp
 L agg-kicad1:PWR #FLG04
 U 1 1 5969BCAF
@@ -3949,21 +3943,21 @@ Wire Notes Line
 	7500 6000 7500 10400
 Wire Notes Line
 	10800 6000 10800 10400
-Text Label 13800 3300 2    50   ~ 0
-CH1_CONT
-Text Label 13800 3400 2    50   ~ 0
-CH2_CONT
-Text Label 13800 3500 2    50   ~ 0
-CH3_CONT
-Text Label 13800 3600 2    50   ~ 0
-CH4_CONT
 Text Label 13800 3700 2    50   ~ 0
-CH5_CONT
+CH1_CONT
 Text Label 13800 3800 2    50   ~ 0
-CH6_CONT
+CH2_CONT
 Text Label 13800 3900 2    50   ~ 0
-CH7_CONT
+CH3_CONT
 Text Label 13800 4000 2    50   ~ 0
+CH4_CONT
+Text Label 13800 3600 2    50   ~ 0
+CH5_CONT
+Text Label 13800 3500 2    50   ~ 0
+CH6_CONT
+Text Label 13800 3400 2    50   ~ 0
+CH7_CONT
+Text Label 13800 3300 2    50   ~ 0
 CH8_CONT
 Text Label 15000 2000 0    50   ~ 0
 UART_RX
@@ -6267,15 +6261,13 @@ Wire Wire Line
 Wire Wire Line
 	14900 4200 15000 4200
 Wire Wire Line
-	14900 4300 15000 4300
+	13900 4200 13800 4200
 Wire Wire Line
-	14900 4400 15000 4400
+	13900 4100 13800 4100
 Wire Wire Line
-	14900 4500 15000 4500
+	14900 3900 15000 3900
 Wire Wire Line
 	13900 4400 13800 4400
-NoConn ~ 13900 4100
-NoConn ~ 14900 3900
 NoConn ~ 14900 4700
 NoConn ~ 14900 3300
 Wire Wire Line
@@ -6283,8 +6275,6 @@ Wire Wire Line
 Wire Wire Line
 	14900 2400 15000 2400
 NoConn ~ 14900 1800
-NoConn ~ 14900 1500
-NoConn ~ 14900 2700
 $Comp
 L agg-kicad:PWR #FLG07
 U 1 1 5E96DA2F
@@ -6364,10 +6354,20 @@ Wire Notes Line
 	12350 6200 12350 7500
 Wire Notes Line
 	11200 6200 11200 7500
-NoConn ~ 13900 4200
 NoConn ~ 13900 4300
 Wire Wire Line
 	15000 1900 14900 1900
 Wire Wire Line
 	14900 2000 15000 2000
+Wire Wire Line
+	14900 1500 15000 1500
+NoConn ~ 14900 3800
+NoConn ~ 14900 3700
+Wire Wire Line
+	14900 2700 15000 2700
+Wire Wire Line
+	14900 3600 15000 3600
+NoConn ~ 14900 4300
+NoConn ~ 14900 4400
+NoConn ~ 14900 4500
 $EndSCHEMATC
