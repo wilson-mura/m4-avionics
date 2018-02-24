@@ -320,9 +320,9 @@ Text Label 15000 2200 0    60   ~ 0
 CAN_TXD
 Text Label 15000 2100 0    60   ~ 0
 CAN_RXD
-Text Label 15000 3900 0    50   ~ 0
-LED_GRN
 Text Label 13800 4200 2    50   ~ 0
+LED_GRN
+Text Label 15000 3900 0    50   ~ 0
 LED_RED
 Text Label 13800 4100 2    50   ~ 0
 LED_YLW
