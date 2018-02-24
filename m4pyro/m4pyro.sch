@@ -320,9 +320,9 @@ Text Label 15000 2200 0    60   ~ 0
 CAN_TXD
 Text Label 15000 2100 0    60   ~ 0
 CAN_RXD
-Text Label 15000 3900 0    50   ~ 0
-LED_GRN
 Text Label 13800 4200 2    50   ~ 0
+LED_GRN
+Text Label 15000 3900 0    50   ~ 0
 LED_RED
 Text Label 13800 4100 2    50   ~ 0
 LED_YLW
@@ -739,13 +739,13 @@ Text Label 12100 4850 2    50   ~ 0
 BUS_DIV
 Text Label 11350 4850 2    50   ~ 0
 SI_DIV
-Text Label 15000 1300 0    50   ~ 0
-SI_DIV
 Text Label 15000 1400 0    50   ~ 0
+SI_DIV
+Text Label 15000 1300 0    50   ~ 0
 BUS_DIV
-Text Label 13800 4500 2    50   ~ 0
-3A_EN
 Text Label 13800 4400 2    50   ~ 0
+3A_EN
+Text Label 13800 4500 2    50   ~ 0
 1A_EN
 $Comp
 L agg-kicad1:Si5515CDC Q3

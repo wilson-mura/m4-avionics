@@ -320,11 +320,11 @@ Text Label 15000 2200 0    60   ~ 0
 CAN_TXD
 Text Label 15000 2100 0    60   ~ 0
 CAN_RXD
-Text Label 15000 4500 0    50   ~ 0
+Text Label 15000 3900 0    50   ~ 0
 LED_GRN
-Text Label 15000 4300 0    50   ~ 0
+Text Label 13800 4200 2    50   ~ 0
 LED_RED
-Text Label 15000 4400 0    50   ~ 0
+Text Label 13800 4100 2    50   ~ 0
 LED_YLW
 Wire Wire Line
 	15000 2200 14900 2200
@@ -739,13 +739,13 @@ Text Label 12100 4850 2    50   ~ 0
 BUS_DIV
 Text Label 11350 4850 2    50   ~ 0
 SI_DIV
-Text Label 15000 1300 0    50   ~ 0
-SI_DIV
 Text Label 15000 1400 0    50   ~ 0
+SI_DIV
+Text Label 15000 1300 0    50   ~ 0
 BUS_DIV
-Text Label 13800 4500 2    50   ~ 0
-3A_EN
 Text Label 13800 4400 2    50   ~ 0
+3A_EN
+Text Label 13800 4500 2    50   ~ 0
 1A_EN
 $Comp
 L agg-kicad1:Si5515CDC Q3
@@ -6261,15 +6261,13 @@ Wire Wire Line
 Wire Wire Line
 	14900 4200 15000 4200
 Wire Wire Line
-	14900 4300 15000 4300
+	13900 4200 13800 4200
 Wire Wire Line
-	14900 4400 15000 4400
+	13900 4100 13800 4100
 Wire Wire Line
-	14900 4500 15000 4500
+	14900 3900 15000 3900
 Wire Wire Line
 	13900 4400 13800 4400
-NoConn ~ 13900 4100
-NoConn ~ 14900 3900
 NoConn ~ 14900 4700
 NoConn ~ 14900 3300
 Wire Wire Line
@@ -6356,7 +6354,6 @@ Wire Notes Line
 	12350 6200 12350 7500
 Wire Notes Line
 	11200 6200 11200 7500
-NoConn ~ 13900 4200
 NoConn ~ 13900 4300
 Wire Wire Line
 	15000 1900 14900 1900
@@ -6370,4 +6367,7 @@ Wire Wire Line
 	14900 2700 15000 2700
 Wire Wire Line
 	14900 3600 15000 3600
+NoConn ~ 14900 4300
+NoConn ~ 14900 4400
+NoConn ~ 14900 4500
 $EndSCHEMATC
