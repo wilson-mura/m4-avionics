@@ -4214,7 +4214,6 @@ Wire Wire Line
 Text Label 1550 1800 2    60   ~ 0
 V1_FIRE
 NoConn ~ 1650 2100
-NoConn ~ 1650 2200
 $Comp
 L agg-kicad1:R R43
 U 1 1 5B08C9B8
@@ -4461,7 +4460,7 @@ Connection ~ 2650 1200
 Wire Wire Line
 	2650 1200 2750 1200
 Text Notes 1700 3650 0    60   ~ 0
-12v @ 12A Max.
+12v @ 8A Max.
 Wire Wire Line
 	5850 2000 5950 2000
 Wire Wire Line
@@ -4637,7 +4636,6 @@ Wire Wire Line
 Text Label 4950 1800 2    60   ~ 0
 V2_FIRE
 NoConn ~ 5050 2100
-NoConn ~ 5050 2200
 $Comp
 L agg-kicad1:R R48
 U 1 1 5C745FC8
@@ -4885,8 +4883,6 @@ Wire Wire Line
 Connection ~ 6050 1200
 Wire Wire Line
 	6050 1200 6150 1200
-Text Notes 5100 3650 0    60   ~ 0
-12v @ 12A Max.
 Wire Wire Line
 	9250 2000 9350 2000
 Wire Wire Line
@@ -5062,7 +5058,6 @@ Wire Wire Line
 Text Label 8350 1800 2    60   ~ 0
 V3_FIRE
 NoConn ~ 8450 2100
-NoConn ~ 8450 2200
 $Comp
 L agg-kicad1:R R53
 U 1 1 5C7E9DD1
@@ -5312,8 +5307,6 @@ Wire Wire Line
 Connection ~ 9450 1200
 Wire Wire Line
 	9450 1200 9550 1200
-Text Notes 8500 3650 0    60   ~ 0
-12v @ 12A Max.
 Text Notes 550  700  0    98   ~ 20
 VALVE CHANNELS - Firing & Current Monitoring
 Text Label 15000 4000 0    50   ~ 0
@@ -6370,4 +6363,95 @@ Wire Wire Line
 NoConn ~ 14900 4300
 NoConn ~ 14900 4400
 NoConn ~ 14900 4500
+$Comp
+L agg-kicad1:R R64
+U 1 1 5AABCF7D
+P 850 2650
+F 0 "R64" H 900 2700 50  0000 C CNN
+F 1 "82.5k" H 900 2600 50  0000 C CNN
+F 2 "agg:0402" H 850 2650 50  0001 C CNN
+F 3 "" H 850 2650 50  0001 C CNN
+F 4 "2694663" H -6600 1750 60  0001 C CNN "Farnell"
+	1    850  2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	850  2550 850  2200
+Wire Wire Line
+	850  2200 1650 2200
+$Comp
+L agg-kicad1:GND #PWR0120
+U 1 1 5ABE9834
+P 850 2750
+F 0 "#PWR0120" H 720 2790 50  0001 L CNN
+F 1 "GND" H 850 2650 50  0000 C CNN
+F 2 "" H 850 2750 60  0000 C CNN
+F 3 "" H 850 2750 60  0000 C CNN
+	1    850  2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  2750 850  2650
+$Comp
+L agg-kicad1:R R65
+U 1 1 5AD16B02
+P 4250 2650
+F 0 "R65" H 4300 2700 50  0000 C CNN
+F 1 "82.5k" H 4300 2600 50  0000 C CNN
+F 2 "agg:0402" H 4250 2650 50  0001 C CNN
+F 3 "" H 4250 2650 50  0001 C CNN
+F 4 "2694663" H -3200 1750 60  0001 C CNN "Farnell"
+	1    4250 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 2550 4250 2200
+Wire Wire Line
+	4250 2200 5050 2200
+$Comp
+L agg-kicad1:GND #PWR0121
+U 1 1 5AD16B0A
+P 4250 2750
+F 0 "#PWR0121" H 4120 2790 50  0001 L CNN
+F 1 "GND" H 4250 2650 50  0000 C CNN
+F 2 "" H 4250 2750 60  0000 C CNN
+F 3 "" H 4250 2750 60  0000 C CNN
+	1    4250 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2750 4250 2650
+$Comp
+L agg-kicad1:R R66
+U 1 1 5AE46060
+P 7650 2650
+F 0 "R66" H 7700 2700 50  0000 C CNN
+F 1 "82.5k" H 7700 2600 50  0000 C CNN
+F 2 "agg:0402" H 7650 2650 50  0001 C CNN
+F 3 "" H 7650 2650 50  0001 C CNN
+F 4 "2694663" H 200 1750 60  0001 C CNN "Farnell"
+	1    7650 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7650 2550 7650 2200
+Wire Wire Line
+	7650 2200 8450 2200
+$Comp
+L agg-kicad1:GND #PWR0122
+U 1 1 5AE46068
+P 7650 2750
+F 0 "#PWR0122" H 7520 2790 50  0001 L CNN
+F 1 "GND" H 7650 2650 50  0000 C CNN
+F 2 "" H 7650 2750 60  0000 C CNN
+F 3 "" H 7650 2750 60  0000 C CNN
+	1    7650 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 2750 7650 2650
+Text Notes 5100 3650 0    60   ~ 0
+12v @ 8A Max.
+Text Notes 8500 3650 0    60   ~ 0
+12v @ 8A Max.
 $EndSCHEMATC

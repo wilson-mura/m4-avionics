@@ -1741,17 +1741,6 @@ SCL
 Text Label -5150 2650 0    60   ~ 0
 JTDO
 $Comp
-L agg-kicad1:VCC #PWR?
-U 1 1 5A94CE87
-P 5500 6100
-F 0 "#PWR?" H 5500 6210 50  0001 L CNN
-F 1 "VCC" H 5500 6190 50  0000 C CNN
-F 2 "" H 5500 6100 60  0000 C CNN
-F 3 "" H 5500 6100 60  0000 C CNN
-	1    5500 6100
-	1    0    0    -1  
-$EndComp
-$Comp
 L agg-kicad1:C C?
 U 1 1 5A94CE96
 P 5250 4300
@@ -2845,8 +2834,8 @@ Wire Notes Line
 	7800 5850 7800 7850
 Text Notes 4550 5800 0    98   ~ 20
 Pyro Enable
-Text Notes 8850 6000 0    60   ~ 0
-VCC 18A @ 16v
+Text Notes 6700 6000 0    60   ~ 0
+PYRO Max 19A @ 16v
 $Comp
 L agg-kicad1:PFET_GDS Q?
 U 1 1 5C0D0136
@@ -2858,5 +2847,18 @@ F 3 "http://www.farnell.com/datasheets/2049700.pdf?_ga=2.14826548.329194656.1519
 F 4 "2335355" H 6450 6850 60  0001 C CNN "Farnell"
 	1    6450 6850
 	-1   0    0    -1  
+$EndComp
+Text Notes 4550 8100 0    60   ~ 0
+Probably worth doubling up the PFET and adding in a pyro_so_div\nto meausre turn on.
+$Comp
+L agg-kicad1:VBATT #PWR?
+U 1 1 5AFB37A7
+P 5500 6100
+F 0 "#PWR?" H 5500 6210 50  0001 L CNN
+F 1 "VBATT" H 5500 6190 50  0000 C CNN
+F 2 "" H 5500 6100 60  0000 C CNN
+F 3 "" H 5500 6100 60  0000 C CNN
+	1    5500 6100
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
