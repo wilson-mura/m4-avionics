@@ -3,20 +3,20 @@ Circuit: * Z:\home\gregory\m4-avionics\m4fc\pcb\ltspice\ideal_diode.asc
 Instance "m:m1:1": Width narrower than recommended for a level 3 MOSFET.
 Direct Newton iteration for .op point succeeded.
 
-Date: Sun Feb 25 15:02:47 2018
+Date: Sun Feb 25 15:48:49 2018
 Total elapsed time: 0.026 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 356
-traniter = 324
+totiter = 362
+traniter = 330
 tranpoints = 130
-accept = 112
-rejected = 18
+accept = 113
+rejected = 17
 matrix size = 23
 fillins = 22
 solver = Normal
-Matrix Compiler1: 3.42 KB object code size  0.9/0.5/[0.4]
-Matrix Compiler2: off  [0.4]/0.5/0.5
+Matrix Compiler1: 3.42 KB object code size  1.0/0.6/[0.4]
+Matrix Compiler2: off  [0.5]/0.7/0.6
 
