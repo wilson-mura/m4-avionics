@@ -35,6 +35,36 @@ X PM 2 -350 -100 250 R 60 60 1 1 P I
 ENDDRAW
 ENDDEF
 #
+# m2fc-cache:TESTPAD
+#
+DEF ~m2fc-cache:TESTPAD TP 0 40 N N 1 F N
+F0 "TP" 30 -40 30 H V C CNN
+F1 "m2fc-cache:TESTPAD" 0 50 60 H I C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+C 50 0 5 0 1 0 N
+C 50 0 10 0 1 0 N
+C 50 0 15 0 1 0 N
+C 50 0 20 0 1 0 N
+X TP 1 0 0 50 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# m2fc-cache:VAA
+#
+DEF m2fc-cache:VAA #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "m2fc-cache:VAA" 0 150 50 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+C 0 75 25 0 1 0 N
+P 2 0 1 0 0 0 0 50 N
+X VAA 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
 # m4dl-rescue:3v3-agg-kicad
 #
 DEF m4dl-rescue:3v3-agg-kicad #PWR 0 40 N N 1 F P
