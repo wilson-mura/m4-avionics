@@ -320,11 +320,11 @@ Text Label 15000 2200 0    60   ~ 0
 CAN_TXD
 Text Label 15000 2100 0    60   ~ 0
 CAN_RXD
-Text Label 15000 4500 0    50   ~ 0
+Text Label 13800 4200 2    50   ~ 0
 LED_GRN
-Text Label 15000 4300 0    50   ~ 0
+Text Label 15000 3900 0    50   ~ 0
 LED_RED
-Text Label 15000 4400 0    50   ~ 0
+Text Label 13800 4100 2    50   ~ 0
 LED_YLW
 Wire Wire Line
 	15000 2200 14900 2200
@@ -739,13 +739,13 @@ Text Label 12100 4850 2    50   ~ 0
 BUS_DIV
 Text Label 11350 4850 2    50   ~ 0
 SI_DIV
-Text Label 15000 1300 0    50   ~ 0
-SI_DIV
 Text Label 15000 1400 0    50   ~ 0
+SI_DIV
+Text Label 15000 1300 0    50   ~ 0
 BUS_DIV
-Text Label 13800 4500 2    50   ~ 0
-3A_EN
 Text Label 13800 4400 2    50   ~ 0
+3A_EN
+Text Label 13800 4500 2    50   ~ 0
 1A_EN
 $Comp
 L agg-kicad1:Si5515CDC Q3
@@ -1589,21 +1589,21 @@ Text Notes 9250 7150 0    60   ~ 0
 Channel 4
 Text Notes 10850 5500 0    60   ~ 0
 Voltage Monitoring
-Text Label 15000 2600 0    50   ~ 0
+Text Label 15000 2500 0    59   ~ 0
 CH5
-Text Label 15000 3600 0    50   ~ 0
+Text Label 15000 3500 0    59   ~ 0
 CH6
-Text Label 15000 3800 0    50   ~ 0
+Text Label 15000 1500 0    59   ~ 0
 CH7
-Text Label 15000 3500 0    50   ~ 0
+Text Label 15000 3400 0    59   ~ 0
 CH8
-Text Label 15000 2500 0    50   ~ 0
+Text Label 15000 3600 0    59   ~ 0
 CH1
-Text Label 15000 2800 0    50   ~ 0
+Text Label 15000 2800 0    59   ~ 0
 CH2
-Text Label 15000 3700 0    50   ~ 0
+Text Label 15000 2700 0    59   ~ 0
 CH3
-Text Label 15000 3400 0    50   ~ 0
+Text Label 15000 2600 0    59   ~ 0
 CH4
 Wire Notes Line
 	4100 9550 550  9550
@@ -1644,15 +1644,9 @@ Wire Wire Line
 Wire Wire Line
 	15000 2800 14900 2800
 Wire Wire Line
-	14900 3600 15000 3600
-Wire Wire Line
 	15000 2500 14900 2500
 Wire Wire Line
 	14900 2600 15000 2600
-Wire Wire Line
-	15000 3700 14900 3700
-Wire Wire Line
-	14900 3800 15000 3800
 $Comp
 L agg-kicad1:PWR #FLG04
 U 1 1 5969BCAF
@@ -1694,8 +1688,6 @@ Wire Wire Line
 	3000 8650 3050 8650
 Wire Wire Line
 	3050 8650 3050 8700
-Wire Wire Line
-	13800 4300 13900 4300
 Wire Wire Line
 	13800 4500 13900 4500
 Wire Wire Line
@@ -3951,66 +3943,60 @@ Wire Notes Line
 	7500 6000 7500 10400
 Wire Notes Line
 	10800 6000 10800 10400
-Text Label 13800 3300 2    50   ~ 0
-CH1_CONT
-Text Label 13800 3400 2    50   ~ 0
-CH2_CONT
-Text Label 13800 3500 2    50   ~ 0
-CH3_CONT
-Text Label 13800 3600 2    50   ~ 0
-CH4_CONT
 Text Label 13800 3700 2    50   ~ 0
-CH5_CONT
+CH1_CONT
 Text Label 13800 3800 2    50   ~ 0
-CH6_CONT
+CH2_CONT
 Text Label 13800 3900 2    50   ~ 0
-CH7_CONT
+CH3_CONT
 Text Label 13800 4000 2    50   ~ 0
+CH4_CONT
+Text Label 13800 3600 2    50   ~ 0
+CH5_CONT
+Text Label 13800 3500 2    50   ~ 0
+CH6_CONT
+Text Label 13800 3400 2    50   ~ 0
+CH7_CONT
+Text Label 13800 3300 2    50   ~ 0
 CH8_CONT
-Text Label 13800 4300 2    50   ~ 0
+Text Label 15000 2000 0    50   ~ 0
 UART_RX
-Text Label 13800 4200 2    50   ~ 0
+Text Label 15000 1900 0    50   ~ 0
 UART_TX
 $Comp
-L agg-kicad:CONN_01x06 J5
+L agg-kicad:CONN_01x03 J5
 U 1 1 5D21ED89
-P 11500 6650
-F 0 "J5" H 11450 6750 50  0000 C CNN
-F 1 "PYRO" H 11500 6050 50  0000 C CNN
-F 2 "" H 11500 6650 50  0001 C CNN
-F 3 "" H 11500 6650 50  0001 C CNN
-	1    11500 6650
+P 11500 6400
+F 0 "J5" H 11450 6500 50  0000 C CNN
+F 1 "SUPPLY" H 11500 6100 50  0000 C CNN
+F 2 "agg:ULTRA-FIT-01x03" H 11500 6400 50  0001 C CNN
+F 3 "" H 11500 6400 50  0001 C CNN
+F 4 "2494347" H 11500 6400 50  0001 C CNN "Farnell"
+	1    11500 6400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11600 6650 11700 6650
+	11600 6400 11700 6400
 Wire Wire Line
-	11600 6750 11700 6750
-Wire Wire Line
-	11600 6850 11700 6850
+	11600 6500 11700 6500
 Wire Wire Line
 	11600 6950 11700 6950
 Wire Wire Line
 	11600 7050 11700 7050
-Text Label 11700 6850 0    60   ~ 0
-VALVE_1
+Wire Wire Line
+	11600 7150 11700 7150
 Text Label 11700 6950 0    60   ~ 0
-VALVE_2
+VALVE_1
 Text Label 11700 7050 0    60   ~ 0
+VALVE_2
+Text Label 11700 7150 0    60   ~ 0
 VALVE_3
-Text Label 11700 6650 0    60   ~ 0
+Text Label 11700 6400 0    60   ~ 0
 PYRO_SI
-Text Label 11700 6750 0    60   ~ 0
+Text Label 11700 6500 0    60   ~ 0
 PYRO_SI
-NoConn ~ 11600 7150
-Wire Notes Line
-	11200 6400 12350 6400
 Text Notes 11250 7450 0    60   ~ 0
-MOLEX Conenctor
-Wire Notes Line
-	12350 6400 12350 7500
-Wire Notes Line
-	11200 6400 11200 7500
+MOLEX Conenctors
 Wire Notes Line
 	11200 7500 12350 7500
 Wire Notes Line
@@ -4228,7 +4214,6 @@ Wire Wire Line
 Text Label 1550 1800 2    60   ~ 0
 V1_FIRE
 NoConn ~ 1650 2100
-NoConn ~ 1650 2200
 $Comp
 L agg-kicad1:R R43
 U 1 1 5B08C9B8
@@ -4475,7 +4460,7 @@ Connection ~ 2650 1200
 Wire Wire Line
 	2650 1200 2750 1200
 Text Notes 1700 3650 0    60   ~ 0
-12v @ 12A Max.
+12v @ 8A Max.
 Wire Wire Line
 	5850 2000 5950 2000
 Wire Wire Line
@@ -4651,7 +4636,6 @@ Wire Wire Line
 Text Label 4950 1800 2    60   ~ 0
 V2_FIRE
 NoConn ~ 5050 2100
-NoConn ~ 5050 2200
 $Comp
 L agg-kicad1:R R48
 U 1 1 5C745FC8
@@ -4899,8 +4883,6 @@ Wire Wire Line
 Connection ~ 6050 1200
 Wire Wire Line
 	6050 1200 6150 1200
-Text Notes 5100 3650 0    60   ~ 0
-12v @ 12A Max.
 Wire Wire Line
 	9250 2000 9350 2000
 Wire Wire Line
@@ -5076,7 +5058,6 @@ Wire Wire Line
 Text Label 8350 1800 2    60   ~ 0
 V3_FIRE
 NoConn ~ 8450 2100
-NoConn ~ 8450 2200
 $Comp
 L agg-kicad1:R R53
 U 1 1 5C7E9DD1
@@ -5326,8 +5307,6 @@ Wire Wire Line
 Connection ~ 9450 1200
 Wire Wire Line
 	9450 1200 9550 1200
-Text Notes 8500 3650 0    60   ~ 0
-12v @ 12A Max.
 Text Notes 550  700  0    98   ~ 20
 VALVE CHANNELS - Firing & Current Monitoring
 Text Label 15000 4000 0    50   ~ 0
@@ -6275,17 +6254,13 @@ Wire Wire Line
 Wire Wire Line
 	14900 4200 15000 4200
 Wire Wire Line
-	14900 4300 15000 4300
+	13900 4200 13800 4200
 Wire Wire Line
-	14900 4400 15000 4400
+	13900 4100 13800 4100
 Wire Wire Line
-	14900 4500 15000 4500
+	14900 3900 15000 3900
 Wire Wire Line
 	13900 4400 13800 4400
-Wire Wire Line
-	13900 4200 13800 4200
-NoConn ~ 13900 4100
-NoConn ~ 14900 3900
 NoConn ~ 14900 4700
 NoConn ~ 14900 3300
 Wire Wire Line
@@ -6293,10 +6268,6 @@ Wire Wire Line
 Wire Wire Line
 	14900 2400 15000 2400
 NoConn ~ 14900 1800
-NoConn ~ 14900 1900
-NoConn ~ 14900 2000
-NoConn ~ 14900 1500
-NoConn ~ 14900 2700
 $Comp
 L agg-kicad:PWR #FLG07
 U 1 1 5E96DA2F
@@ -6354,4 +6325,133 @@ F 3 "" H 14350 10400 50  0001 C CNN
 	1    14350 10400
 	1    0    0    -1  
 $EndComp
+$Comp
+L agg-kicad:CONN_01x03 J6
+U 1 1 5A989F84
+P 11500 6950
+F 0 "J6" H 11450 7050 50  0000 C CNN
+F 1 "VALVES" H 11500 6650 50  0000 C CNN
+F 2 "agg:ULTRA-FIT-01x03" H 11500 6950 50  0001 C CNN
+F 3 "" H 11500 6950 50  0001 C CNN
+F 4 "2494347" H 11500 6950 50  0001 C CNN "farnell"
+	1    11500 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11600 6600 11700 6600
+Text Label 11700 6600 0    60   ~ 0
+PYRO_SI
+Wire Notes Line
+	12350 6200 11200 6200
+Wire Notes Line
+	12350 6200 12350 7500
+Wire Notes Line
+	11200 6200 11200 7500
+NoConn ~ 13900 4300
+Wire Wire Line
+	15000 1900 14900 1900
+Wire Wire Line
+	14900 2000 15000 2000
+Wire Wire Line
+	14900 1500 15000 1500
+NoConn ~ 14900 3800
+NoConn ~ 14900 3700
+Wire Wire Line
+	14900 2700 15000 2700
+Wire Wire Line
+	14900 3600 15000 3600
+NoConn ~ 14900 4300
+NoConn ~ 14900 4400
+NoConn ~ 14900 4500
+$Comp
+L agg-kicad1:R R64
+U 1 1 5AABCF7D
+P 850 2650
+F 0 "R64" H 900 2700 50  0000 C CNN
+F 1 "82.5k" H 900 2600 50  0000 C CNN
+F 2 "agg:0402" H 850 2650 50  0001 C CNN
+F 3 "" H 850 2650 50  0001 C CNN
+F 4 "2694663" H -6600 1750 60  0001 C CNN "Farnell"
+	1    850  2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	850  2550 850  2200
+Wire Wire Line
+	850  2200 1650 2200
+$Comp
+L agg-kicad1:GND #PWR0120
+U 1 1 5ABE9834
+P 850 2750
+F 0 "#PWR0120" H 720 2790 50  0001 L CNN
+F 1 "GND" H 850 2650 50  0000 C CNN
+F 2 "" H 850 2750 60  0000 C CNN
+F 3 "" H 850 2750 60  0000 C CNN
+	1    850  2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  2750 850  2650
+$Comp
+L agg-kicad1:R R65
+U 1 1 5AD16B02
+P 4250 2650
+F 0 "R65" H 4300 2700 50  0000 C CNN
+F 1 "82.5k" H 4300 2600 50  0000 C CNN
+F 2 "agg:0402" H 4250 2650 50  0001 C CNN
+F 3 "" H 4250 2650 50  0001 C CNN
+F 4 "2694663" H -3200 1750 60  0001 C CNN "Farnell"
+	1    4250 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 2550 4250 2200
+Wire Wire Line
+	4250 2200 5050 2200
+$Comp
+L agg-kicad1:GND #PWR0121
+U 1 1 5AD16B0A
+P 4250 2750
+F 0 "#PWR0121" H 4120 2790 50  0001 L CNN
+F 1 "GND" H 4250 2650 50  0000 C CNN
+F 2 "" H 4250 2750 60  0000 C CNN
+F 3 "" H 4250 2750 60  0000 C CNN
+	1    4250 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2750 4250 2650
+$Comp
+L agg-kicad1:R R66
+U 1 1 5AE46060
+P 7650 2650
+F 0 "R66" H 7700 2700 50  0000 C CNN
+F 1 "82.5k" H 7700 2600 50  0000 C CNN
+F 2 "agg:0402" H 7650 2650 50  0001 C CNN
+F 3 "" H 7650 2650 50  0001 C CNN
+F 4 "2694663" H 200 1750 60  0001 C CNN "Farnell"
+	1    7650 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7650 2550 7650 2200
+Wire Wire Line
+	7650 2200 8450 2200
+$Comp
+L agg-kicad1:GND #PWR0122
+U 1 1 5AE46068
+P 7650 2750
+F 0 "#PWR0122" H 7520 2790 50  0001 L CNN
+F 1 "GND" H 7650 2650 50  0000 C CNN
+F 2 "" H 7650 2750 60  0000 C CNN
+F 3 "" H 7650 2750 60  0000 C CNN
+	1    7650 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 2750 7650 2650
+Text Notes 5100 3650 0    60   ~ 0
+12v @ 8A Max.
+Text Notes 8500 3650 0    60   ~ 0
+12v @ 8A Max.
 $EndSCHEMATC
