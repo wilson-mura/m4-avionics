@@ -1,0 +1,207 @@
+Bill Of Materials
+=================
+
+Source file: m4psu.xml
+Date: 2018-03-01T21:07:54.886286
+
+Parts Missing Footprints
+------------------------
+
+
+Parts Missing Order Codes
+-------------------------
+J2     EAST TOP        agg:TFML-115-02-L-D-LC
+P1     SWD_TC          agg:TC2030-NL
+X1     HOLE            agg:M3_MOUNT
+X2     HOLE            agg:M3_MOUNT
+X3     HOLE            agg:M3_MOUNT
+X4     HOLE            agg:M3_MOUNT
+TP4    TESTPAD         agg:TESTPAD
+TP3    TESTPAD         agg:TESTPAD
+TP2    TESTPAD         agg:TESTPAD
+TP1    TESTPAD         agg:TESTPAD
+J1     WEST TOP        agg:TFML-115-02-L-D-LC
+J8     TAP2            agg:SIL-254P-01
+J6     BAT+            agg:SIL-254P-01
+J10    BAT-            agg:SIL-254P-01
+J9     TAP1            agg:SIL-254P-01
+J7     TAP3            agg:SIL-254P-01
+
+Inconsistent Order Codes
+------------------------
+  farnell
+  ~~~~~~~
+    2494347: 
+      J4     VALVES          agg:ULTRA-FIT-01x03
+      J5     CHG             agg:ULTRA-FIT-01x03
+  Farnell
+  ~~~~~~~
+    9239472: 
+      R1     100k            agg:0402
+      R106   100K            agg:0402
+    1907510: 
+      C17    22µ             agg:0805
+      C27    22u             agg:0805
+      C28    22u             agg:0805
+      C40    22u             agg:0805
+      C41    22u             agg:0805
+    9239111: 
+      R5     100             agg:0402
+      R88    100R            agg:0402
+      R87    100R            agg:0402
+      R93    100R            agg:0402
+      R92    100R            agg:0402
+      R95    100R            agg:0402
+      R94    100R            agg:0402
+
+Vendor Specific BOMs
+--------------------
+  Farnell
+  ~~~~~~~
+2496790,2,2x 10p 0402
+2503038,1,1x 10m 0603
+2098274,3,3x NFET2 PowerFLAT-5x6
+1907510,6,6x 22u 22µ 0805
+2447127,11,11x 1M 0402
+2494347,1,1x SUPPLY ULTRA-FIT-01x03
+1459033,2,2x SCHOTTKY SOD-323
+2773540,1,1x TLV76012 SOT-23
+2447096,21,21x 10k 0402
+2364070,11,11x NFET PowerPAK-SC-75-6L-Sin
+2382918,1,1x TPS62152 QFN-16-EP-TI
+2218856,11,11x 100n 0402
+2447187,3,3x 4k7 0402
+1469669,1,1x 10K 0402
+2064363,1,1x STM32F405RxTx LQFP-64
+1652742,2,2x 10R 0402
+2211176,1,1x 1µ5 0603
+1740614,6,6x 100n 0603
+2422226,1,1x SiZ340DT PowerPair-3x3
+2218855,2,2x 1µ 0402
+2492469,1,1x TPS62133 QFN-16-EP-TI
+2670533,3,3x 5k49 0402
+2498598,3,3x NFET SOT-883-B
+9239472,3,3x 100K 100k 0402
+2426952,1,1x 4µ7 0402
+1621962,2,2x 2m 1206
+1845762,4,4x 10µ 1210
+2496792,1,1x 100p 0402
+2335355,4,4x PFET PowerPAK-SO-8
+2496771,16,16x 100n 0402
+2496799,1,1x 22p 0402
+2314404,1,1x RED 0603-LED
+2502450,1,1x 330K 0402
+2448755,1,1x MCP2562 DFN-8-EP-MICROCHIP
+2471154,1,1x BQ40Z60 QFN-32-EP-TI
+2506952,1,1x 26M XTAL-20x16
+2335804,1,1x YLW 0603-LED
+2544998,1,1x NFET SON2x2N
+2362088,2,2x 2µ2 0402
+2073065,2,2x 47k 0402
+2059192,1,1x 2R 0402
+2501102,11,11x PFET SON2x2
+1758924,3,3x 10n 0402
+1735530,1,1x 10u 0805
+2289216,2,2x 2u2 XFL4020
+2379805,2,2x 10k 0402
+1469670,3,3x 10M 0402
+1758918,3,3x 3n3 0402
+RE05965,11,11x 10m 0603
+2496814,1,1x 1µ 0402
+9239111,10,10x 100R 100 0402
+2290363,1,1x GRN 0603-LED
+2309885,1,1x 2µ2 SRP5030T
+2059175,1,1x 56K2 0402
+2295457,1,1x LTC4151 DFN-10-EP-LT
+2461150,3,3x LTC2975 QFN-64-EP-LTC-UP
+2447160,15,15x 33k 0402
+2455373,1,1x 3µ3 VLS201610HBX-1
+1657931,2,2x 2µ2 0805
+2320856,1,1x 10u 0805
+2492468,1,1x TPS62132 QFN-16-EP-TI
+1458805,3,3x 5K1 0402
+
+
+  Power
+  ~~~~~
+1W,2,2x R10 R98 1206
+
+
+  Fit
+  ~~~
+NOFIT,11,11x R47 R51 R55 R27 R39 R43 R59 R83 R71 R75 R79 0402
+
+
+  farnell
+  ~~~~~~~
+2494347,2,2x CHG VALVES ULTRA-FIT-01x03
+
+
+Assembly BOM
+------------
+2496790              2   10p             0402            C1 C2
+2503038              1   10m             0603            R99
+2098274              3   NFET2           PowerFLAT-5x6   Q29 Q30 Q32
+1907510              6   22u,22µ         0805            C14 C17 C27 C28 C40 C41
+2447127              11  1M              0402            R28 R40 R44 R48 R52 R56 R60 R72 R76 R80 R84
+2494347              1   SUPPLY          ULTRA-FIT-01x03 J3
+1459033              2   SCHOTTKY        SOD-323         D4 D5
+2773540              1   TLV76012        SOT-23          IC5
+2447096              21  10k             0402            R19 R20 R21 R22 R23 R25 R26 R31 R32 R33 R34 R35 R37 R38 R63 R64 R65 R66 R67 R69 R70
+2364070              11  NFET            PowerPAK-SC-75-6L-Single Q11 Q13 Q15 Q17 Q19 Q21 Q23 Q25 Q27 Q7 Q9
+2382918              1   TPS62152        QFN-16-EP-TI    IC3
+2218856              11  100n            0402            C45 C46 C49 C50 C51 C52 C54 C55 C56 C57 C58
+2447187              3   4k7             0402            R4 R8 R9
+1469669              1   10K             0402            R103
+2064363              1   STM32F405RxTx   LQFP-64         IC2
+1652742              2   10R             0402            R91 R97
+2211176              1   1µ5             0603            C47
+1740614              6   100n            0603            C15 C18 C19 C20 C23 C38
+2422226              1   SiZ340DT        PowerPair-3x3   Q31
+2218855              2   1µ              0402            C43 C48
+2492469              1   TPS62133        QFN-16-EP-TI    IC9
+2670533              3   5k49            0402            R24 R36 R68
+2498598              3   NFET            SOT-883-B       Q33 Q4 Q6
+9239472              3   100K,100k       0402            R1 R106 R2
+2426952              1   4µ7             0402            C4
+1621962              2   2m              1206            R10 R98
+1845762              4   10µ             1210            C59 C60 C62 C63
+2496792              1   100p            0402            C53
+2335355              4   PFET            PowerPAK-SO-8   Q1 Q2 Q3 Q5
+2496771              16  100n            0402            C10 C11 C22 C25 C29 C3 C30 C32 C33 C34 C37 C42 C5 C6 C8 C9
+2496799              1   22p             0402            C61
+2314404              1   RED             0603-LED        D1
+2502450              1   330K            0402            R101
+2448755              1   MCP2562         DFN-8-EP-MICROCHIP IC1
+2471154              1   BQ40Z60         QFN-32-EP-TI    IC11
+2506952              1   26M             XTAL-20x16      Y1
+2335804              1   YLW             0603-LED        D2
+2544998              1   NFET            SON2x2N         Q34
+2362088              2   2µ2             0402            C12 C13
+2073065              2   47k             0402            R11 R15
+2059192              1   2R              0402            R107
+2501102              11  PFET            SON2x2          Q10 Q12 Q14 Q16 Q18 Q20 Q22 Q24 Q26 Q28 Q8
+1758924              3   10n             0402            C24 C31 C36
+1735530              1   10u             0805            C21
+2289216              2   2u2             XFL4020         L2 L3
+2379805              2   10k             0402            R12 R16
+1469670              3   10M             0402            R100 R105 R89
+1758918              3   3n3             0402            C16 C26 C39
+RE05965              11  10m             0603            R30 R42 R46 R50 R54 R58 R62 R74 R78 R82 R86
+2496814              1   1µ              0402            C7
+9239111              10  100R,100        0402            R3 R5 R6 R7 R87 R88 R92 R93 R94 R95
+2290363              1   GRN             0603-LED        D3
+2309885              1   2µ2             SRP5030T        L4
+2059175              1   56K2            0402            R102
+2295457              1   LTC4151         DFN-10-EP-LT    IC4
+2461150              3   LTC2975         QFN-64-EP-LTC-UP IC10 IC7 IC8
+2447160              15  33k             0402            R13 R14 R17 R18 R29 R41 R45 R49 R53 R57 R61 R73 R77 R81 R85
+2455373              1   3µ3             VLS201610HBX-1  L1
+1657931              2   2µ2             0805            C44 C64
+2320856              1   10u             0805            C35
+2492468              1   TPS62132        QFN-16-EP-TI    IC6
+1458805              3   5K1             0402            R104 R90 R96
+1W                   2   2m              1206            R10 R98
+NOFIT                11  33k             0402            R27 R39 R43 R47 R51 R55 R59 R71 R75 R79 R83
+2494347              2   CHG,VALVES      ULTRA-FIT-01x03 J4 J5
+
